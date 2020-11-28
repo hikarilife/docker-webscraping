@@ -31,7 +31,7 @@ http://localhost:8888
 ```
   
 ## Step5
-ちゃんと動作するか確認します。  
+JupyterLabで下記を実行して、ちゃんと動作するか確認します。  
 Check the containers is working with following script on JupyterLab:
 ```
 from selenium import webdriver
