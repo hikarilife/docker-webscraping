@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  myjupyter:
+    build: .
+    volumes:
+      - ./work:/work
+    ports:
+      - 8888:8888
+
+  sel-debug-c:
+    image: selenium/standalone-chrome-debug
+    ports:
+      - "4444:4444"
+      - "5900:5900"
+    volumes:
+      - /dev/shm:/dev/shm
